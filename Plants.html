@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>did you know ? </title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link href="index.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	}
+	header{
+	height:60px;
+	background:hwb(0 17% 83%);
+	padding:0 50px;
+	}
+	.logo{
+	width:30%;
+	float:left;
+	color:rgb(7, 0, 0);
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:60px;
+	font-size:35px;
+	font-family:sans-serif;
+	}
+	nav{
+	width:68%;
+	float:right;
+	}
+	nav ul{
+	list-style:none;
+	float:right;
+	}
+	nav ul li{
+	display: inline-block;
+	}
+	nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:bold;
+	margin:0 10px;
+	line-height:60px;
+	text-transform:uppercase;
+	}
+	.banner{
+	height:100%;
+	}
+	.banner img{
+	width:100%;
+	height:90vh;
+	}
+	.content{
+	padding:5%;
+	}
+	.content p{
+	font-size:18px;
+	line-height:1.7;
+	font-family:sans-serif;
+	margin-bottom:25px;
+	}
+	footer{
+	background:rgb(36, 34, 34);
+	color:#fff;
+	padding:15px 50px;
+	text-align:center;
+	}
+	   
+	   
+	   @media (max-width: 600px){        
+
+	header {
+	 width: 100%;
+	 height: 100%;
+	 padding: 0;
+	 text-align: center;
+	}
+	.logo {
+	 width: 100%;
+	 float: none;
+	}
+	nav {
+	 width: 100%;
+	 float: none;
+	}
+	nav ul li {
+	 display: block;
+	}
+	nav ul {
+	 float: none;
+	}
+	   }    
+	   ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+       } 
+	   ::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+	   }
+	   ::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+        }     
+	.image img:hover{
+		transform: rotate(12deg);
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			Plethora
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://www.youtube.com/channel/UCWWDImjDg-91KBoHO2ZkCUQ" target="_blank">youtube</a>
+				</li>
+				<li>
+					<a href="feedback.html"target="_blank">feedback</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/NottNero"target="_blank">twitter</a>
+				</li>
+				<li>
+					<a href="post.html"target="_blank">post</a>
+				</li>
+				<li>
+					<a href="contact.html"target="_blank">contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+    <div class="slider">
+
+		<div id="moreimg">
+		  <img src="img/e.jpg">
+		</div>
+	
+	  </div>
+	
+	  <script>
+	
+		var images = ['img/a.jpg', 'img/b.jpg', 'img/c.jpg', 'img/d.jpg', 'img/e.jpg'];
+	
+		var x = 0;
+	
+		var imgs = document.getElementById('moreimg');
+	
+		setInterval(slider, 2000);
+	
+	
+		function slider() {
+	
+		  if (x < images.length) {
+			x = x + 1;
+		  } else {
+			x = 1;
+		  }
+	
+	
+		  imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+	
+	
+		}
+	
+	
+	  </script>
+	
+	
+	  <style type="text/css">
+		.slider {
+		  width: 90%;
+		  height: 500px;
+		  margin: 20px auto;
+		  box-sizing: border-box;
+		  overflow: hidden;
+		  box-shadow: 5px 5px 10px grey;
+	
+		}
+	
+		 img {
+		  width: 100%;
+		  height: 100%;
+		  animation: ani 2s linear;
+	
+		}
+	
+		@keyframes ani {
+		  0% {
+			transform: scale(1.2);
+		  }
+		  10% {
+			transform: scale(1);
+		  }
+		  100% {
+			transform: scale(1);
+		  }
+		}
+	  </style>
+	  <br>
+	  <br>
+      <footer style="background:hwb(0 17% 83%); color:white; padding:10px 10px;"><p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif align-self"><b>PLANTS</b></p></footer>
+      <br>
+      <br>
+      <div class="fh5co-explore">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-push-5 to-animate-2">
+                      <img class="img-responsive" src="https://www.thedailymeal.com/img/gallery/what-really-happens-when-you-eat-grapes-every-day/l-intro-1666892024.jpg" alt="work">
+                  </div>
+                  <div class="col-md-4 col-md-pull-8 to-animate-2">
+                      <div class="mt">
+                          <h3>Grapes light on fire in the microwave</h3>
+                          <p>Back in 2011, a physicist at the University of Sydney went viral after he placed a grape in the microwave and filmed the <a href="https://youtu.be/RwTjsRt0Fzo" rel="noopener">fiery aftermath</a>. And oddly enough, scientists couldn't explain the phenomenon until quite recently. A March 2019 study published in <em>Proceedings of the National Academy of Sciences </em>reported that the fruity fireball occurs as a result of the loose electrons and ions that cluster to <a href="https://www.pnas.org/content/116/10/4000" target="_blank" rel="noopener noreferrer">form plasma when grapes get hot</a>. And here are more of the <a href="https://bestlifeonline.com/crazy-random-facts/" target="_blank" rel="noopener noreferrer">100 Fascinating Facts You'll Want to Share with Everyone You Know</a>.</p>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="fh5co-explore">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-push-5 to-animate-2">
+                      <img class="img-responsive" src="https://www.thevintagenews.com/wp-content/uploads/sites/65/2018/12/pjimage-30.jpg" alt="work">
+                  </div>
+                  <div class="col-md-4 col-md-pull-8 to-animate-2">
+                      <div class="mt">
+                          <h3>McDonald's once created bubblegum-flavored broccoli</h3>
+                          <p>McDonald's is always introducing new items for their loyal customers. And obviously, some are more successful than others. But their <a href="https://www.businessinsider.com/mcdonalds-bubble-gum-broccoli-2014-11" target="_blank" rel="noopener noreferrer">bubblegum-flavored broccoli</a>, which the fast-food chain developed in 2014 as a tastier version of the leafy green for children, was a complete failure. McDonald's CEO <strong>Don Thompson</strong> admitted that kids were confused by the taste.</p>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="fh5co-explore">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-push-5 to-animate-2">
+                      <img class="img-responsive" src="https://cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/VDUTDE7WIJA4TPCJFETYD2UKBE.jpg" alt="work">
+                  </div>
+                  <div class="col-md-4 col-md-pull-8 to-animate-2">
+                      <div class="mt">
+                          <h3>The earth has more than 80,000 species of edible plants.</h3>
+                          <p>And pretty much uses just 30 of them.&nbsp; (90 percent of the foods humans eat come from just 30 plants.)&nbsp; And those 30 are based on profit rather than nutrition. We are better at using them for medicine. (70,000 plant species are utilized for medicine.)&nbsp; Still, only 1 percent of rainforest plants have been studied for medicinal potential.</p>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="fh5co-explore">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-push-5 to-animate-2">
+                      <img class="img-responsive" src="https://ana.press/files/en/news/2023/1/23/12388_759.jpg" alt="work">
+                  </div>
+                  <div class="col-md-4 col-md-pull-8 to-animate-2">
+                      <div class="mt">
+                          <h3>70,000 plant species are utilized for medicine.</h3>
+                          <p>That’s how much the overall international trade in medicinal plants and their products alone is <a class="link-external" href="https://www.financialexpress.com/archive/global-medicinal-plants-demand-may-touch-5-trillion-by-2050/102863/" rel="nofollow noopener" target="_blank">expected</a> to amount to by the year 2050. Estimates, as far as medicinal plants go, are many. According to one by the World Health Organisation, 70% to 95% of people in many developing countries rely largely on traditional medicine, mostly herbal remedies, for primary healthcare. In 2006, researchers estimated that more than 70,000 plant species were being used in medicines worldwide.<span class="hgKElc">It has been estimated that about 35,000 to <b>70,000 plant species are utilized for medicinal</b> purposes globally, of which 6,500 <b>species</b> belong to Asia.</span></p>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="fh5co-explore">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-push-5 to-animate-2">
+                      <img class="img-responsive" src="https://www.bbc.com/future/bespoke/follow-the-food-test/why-modern-food-lost-its-nutrients/assets/images/social.jpg" alt="work">
+                  </div>
+                  <div class="col-md-4 col-md-pull-8 to-animate-2">
+                      <div class="mt">
+                          <h3>Nutrition doesn't factor into the crops we do mass produce</h3>
+                          <p><span class="hgKElc"><b>Nutrition doesn't factor into the crops we do mass produce</b>. The world's largest farmers have pursued certain <b>crops</b> because <b>they can</b> grow a lot of them more quickly, easily and inexpensively <b>to</b> turn a better profit.</span></p>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <div class="tour-button">
+          <a href="people.html" class="btn btn-common">Next Page</a>
+   </div>
+       <style>
+.action .btn-common {
+  margin-top: 55px;
+  float:right;
+}
+.btn-common {
+  font-size: 14px;
+  color: #0099ae;
+  border: 1px solid #0099ae;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 10px 25px;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+<br>
+</div>
+<footer class="footer-distributed">
+
+<div class="footer-left">
+
+<h3>Plethora<span>.com</span></h3>
+
+<p class="footer-links">
+<a href="">Home</a>
+·
+<a href="post.html">Blog</a>
+·
+<a href="contact.html">About</a>
+·
+<a href="post.html">Faq</a>
+·
+<a href="contact.html">Contact</a>
+</p>
+
+<p class="footer-company-name">Plethora &copy; 2023</p>
+</div>
+
+<div class="footer-center">
+
+<div>
+<i class="fa fa-map-marker"></i>
+<p><span></span>UAE , AJMAN</p>
+</div>
+
+<div>
+<i class="fa fa-phone"></i>
+<p>+971553314376</p>
+</div>
+
+<div>
+<i class="fa fa-envelope"></i>
+<p><a href="thepsychopanda7@gmail.com">plethoraenough@gmail.com</a></p>
+</div>
+
+</div>
+
+<div class="footer-right">
+
+<p class="footer-company-about">
+<span>About the company</span>
+Plethora is a lerning platform that offers a wide variety of educational resources, such as online courses, tutorials, and quizzes, to help users expand their knowledge and skills in different subject areas. The platform is designed to be accessible and user-friendly, with a simple navigation system and a variety of interactive tools and features. &copy; to know more
+</p> 
+</div>
+
+</footer>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/600c3f2ea9a34e36b96f89fc/1esntdk2v';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

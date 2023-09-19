@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>did you know ? </title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link href="index.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	}
+	header{
+	height:60px;
+	background:hwb(0 17% 83%);
+	padding:0 50px;
+	}
+	.logo{
+	width:30%;
+	float:left;
+	color:rgb(7, 0, 0);
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:60px;
+	font-size:35px;
+	font-family:sans-serif;
+	}
+	nav{
+	width:68%;
+	float:right;
+	}
+	nav ul{
+	list-style:none;
+	float:right;
+	}
+	nav ul li{
+	display: inline-block;
+	}
+	nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:bold;
+	margin:0 10px;
+	line-height:60px;
+	text-transform:uppercase;
+	}
+	.banner{
+	height:100%;
+	}
+	.banner img{
+	width:100%;
+	height:90vh;
+	}
+	.content{
+	padding:5%;
+	}
+	.content p{
+	font-size:18px;
+	line-height:1.7;
+	font-family:sans-serif;
+	margin-bottom:25px;
+	}
+	footer{
+	background:rgb(36, 34, 34);
+	color:#fff;
+	padding:15px 50px;
+	text-align:center;
+	}
+	   
+	   
+	   @media (max-width: 600px){        
+
+	header {
+	 width: 100%;
+	 height: 100%;
+	 padding: 0;
+	 text-align: center;
+	}
+	.logo {
+	 width: 100%;
+	 float: none;
+	}
+	nav {
+	 width: 100%;
+	 float: none;
+	}
+	nav ul li {
+	 display: block;
+	}
+	nav ul {
+	 float: none;
+	}
+	   }    
+	   ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+       } 
+	   ::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+	   }
+	   ::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+        }     
+	.image img:hover{
+		transform: rotate(12deg);
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			Plethora
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://www.youtube.com/channel/UCWWDImjDg-91KBoHO2ZkCUQ" target="_blank">youtube</a>
+				</li>
+				<li>
+					<a href="feedback.html"target="_blank">feedback</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/NottNero"target="_blank">twitter</a>
+				</li>
+				<li>
+					<a href="post.html"target="_blank">post</a>
+				</li>
+				<li>
+					<a href="contact.html"target="_blank">contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+    <div class="slider">
+
+		<div id="moreimg">
+		  <img src="img/e.jpg">
+		</div>
+	
+	  </div>
+	
+	  <script>
+	
+		var images = ['img/a.jpg', 'img/b.jpg', 'img/c.jpg', 'img/d.jpg', 'img/e.jpg'];
+	
+		var x = 0;
+	
+		var imgs = document.getElementById('moreimg');
+	
+		setInterval(slider, 2000);
+	
+	
+		function slider() {
+	
+		  if (x < images.length) {
+			x = x + 1;
+		  } else {
+			x = 1;
+		  }
+	
+	
+		  imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+	
+	
+		}
+	
+	
+	  </script>
+	
+	
+	  <style type="text/css">
+		.slider {
+		  width: 90%;
+		  height: 500px;
+		  margin: 20px auto;
+		  box-sizing: border-box;
+		  overflow: hidden;
+		  box-shadow: 5px 5px 10px grey;
+	
+		}
+	
+		 img {
+		  width: 100%;
+		  height: 100%;
+		  animation: ani 2s linear;
+	
+		}
+	
+		@keyframes ani {
+		  0% {
+			transform: scale(1.2);
+		  }
+		  10% {
+			transform: scale(1);
+		  }
+		  100% {
+			transform: scale(1);
+		  }
+		}
+	  </style>
+	  <br>
+	  <br>
+	  <br>
+	  <footer><p style="font-family:Verdana;"><b>ANIMALS</b></p></footer>
+	  <br>
+	<div class="content">
+	    <div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" width="700" height="300" src="https://hips.hearstapps.com/hmg-prod/images/many-colorful-jellyfish-on-the-dark-sea-royalty-free-image-1572034000.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>One species of jellyfish is immortal</h3>
+							<p>Only one animal is known to have this remarkable ability: a species of jellyfish, <em>Turritopsis dohrnii, </em>first discovered in the 1880s in the Mediterranean Sea and highlighted as a uniquely enduring organism in the exhibition <em><a href="/exhibitions/life-at-the-limits" target="_self">Life at the Limits: Stories of Amazing Species.&nbsp;</a></em></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/scifindr/articles/image3s/000/002/727/large/meganeuropsis-eating-roach_lucas-lima_3x4.jpg?1470033295" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>There was a prehistoric dragonfly that's wings spanned more than two feet</h3>
+							<p>More than 300 million years ago, the <a href="http://eweb.furman.edu/~wworthen/bio440/evolweb/carboniferous/mega.htm" rel="noopener">Meganeura</a> established itself as the largest known flying insect to ever exist on Earth. The dragonfly-like creature had a wingspan that stretched around 2.5 feet. The bugs were also big enough to hunt prey like frogs and newts, which it could eat with its teeth-like mandibles.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://www.telegraph.co.uk/content/dam/global-health/2023/07/19/TELEMMGLPICT000341423322_16897740056780_trans_NvBQzQNjv4BqnntzVh6i2V8vnWmVeYqabkaMYBMjspBErElm7j2lZzs.jpeg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>A bat can eat up to 1 thousand insects per hour</h3>
+							<p>Many of the claims about how many&nbsp;mosquitoes bats eat seem to be based on a <a href="http://www.sciencedirect.com/science/article/pii/0003347260900221">scientific study from 1960</a>&nbsp;in which bats were released&nbsp;into a confined space in a laboratory with large numbers of <em>Culex quinquefaciatus</em> mosquitoes and monitored overnight. The study was not attempting to examine bat feeding patterns in the wild, but rather how the bats used echo-location to track their&nbsp;prey.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://images.theconversation.com/files/301510/original/file-20191113-77331-bdof4y.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>A snail can sleep for three years at a time</h3>
+							<p>It’s weird to think that snails need to sleep, after all, they don’t look like they do much. Yet, a study at the University of Toronto proved people from all over the world wrong. It turns out, that snails <a href="https://topnaturalmattresses.com/how-long-do-snails-sleep/" class="cs ip" rel="noopener nofollow">sleep for fifteen hours</a> (falling in and out of sleep seven times), and then, go on to do their activities for thirty hours straight.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://www.worldanimalprotection.ca/sites/default/files/styles/600x400/public/media/us_files/1010616_2.jpg?h=b1b7268c&itok=3kdVXwRq" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Wild dolphins call each other by name. “Oi, Flipper!”</h3>
+							<p>The evidence that dolphins <a href="http://www.pnas.org/content/103/21/8293">use signature whistles like names</a> has been building since they were first discovered in the 1960s. They can convey a dolphin’s identity, as well as its mood and motivation. Individuals invent their own whistles at a few months of age, possibly with some <a href="http://www.ncbi.nlm.nih.gov/pubmed/15221637">influence from their mums</a>. They’ll keep the same call for decades, although males <a href="http://www.jstor.org/pss/25063393">sometimes change theirs</a> to resemble the whistle of a new ally.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://assets.iflscience.com/assets/articleNo/66634/iImg/64141/reindeer%20eyes%20turn%20blue.png" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Reindeer eyeballs turn blue in winter to help them see at lower light levels</h3>
+							<p>Reindeer may be best known for fictional Rudolph's glowing red nose, but now scientists find the animals can alter color elsewhere as well — the backs of their eyeballs change from gold in the summer to blue in the winter.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://a-z-animals.com/media/2022/08/shutterstock_2149630131.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>The flamingo can only eat when its head is upside-down</h3>
+							<p>The flamingo is well-known for its habit of eating with its head upside-down. This behavior is largely due to the structure of its mouth and the logistics of lowering its long, graceful neck into the water. This behavior allows flamingos to feed effectively in their natural habitat, but it has ramifications in other aspects of their lives.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://static01.nyt.com/images/2017/04/26/world/26sharks-1/26sharks-1-superJumbo.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Sharks kill fewer than 10 people per year. Humans kill about 100 million sharks per year.</h3>
+							<p>Estimates that emerged from the journal <a href="https://www.sciencedirect.com/science/article/pii/S0308597X13000055">Marine Policy</a> suggest that around <strong>100 million sharks</strong> are killed every year by humans.This number might be vast beyond comprehension but the journal also recognises that it is a conservative estimate and it could by closer to <strong>273 million</strong> killed each year.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Dogs’ sense of smell is about 100, 000 times stronger than humans’. However, they have only one-sixth our number of taste buds.</h3>
+							<p>Dogs' sense of smell overpowers our own by orders of magnitude—it's 10,000 to 100,000 times as acute, scientists say. "Let's suppose they're just 10,000 times better," says James Walker, former director of the Sensory Research Institute at Florida State University, who, with several colleagues, came up with that jaw-dropping estimate during a rigorously designed, oft-cited study. "If you make the analogy to vision, what you and I can see at a third of a mile, a dog could see more than 3,000 miles away and still see as well."</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://nzbirdsonline.org.nz/sites/all/files/2X2A1697%20King%20Penguin%20bol.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>The male gentoo and Adelie penguins “propose” to females by giving them a pebble</h3>
+							<p><span class="hgKElc"><b>MALE PENGUINS PROPOSE TO FEMALES BY GIVING THEM A PEBBLE Male gentoo penguins</b> look for the smoothest, shiniest <b>pebble</b> to present to <b>females</b> of their choice. If the <b>female</b> accepts, she takes the <b>pebble</b> and places <b>it</b> in her nest, accepting the <b>male</b> as her mate.</span></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="tour-button">
+			<a href="Plants.html" class="btn btn-common">Next Page</a>
+		 </div>
+		 <style>
+.action .btn-common {
+    margin-top: 55px;
+    float:right;
+}
+.btn-common {
+    font-size: 14px;
+    color: #0099ae;
+    border: 1px solid #0099ae;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 10px 25px;
+	text-align:center;
+	justify-content: center;
+    align-items: center;
+}
+		 </style> 
+		 <br>
+		</div>
+	<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>Plethora<span>.com</span></h3>
+ 
+		<p class="footer-links">
+		<a href="">Home</a>
+	·
+		<a href="post.html">Blog</a>
+	·
+		<a href="contact.html">About</a>
+	·
+		<a href="post.html">Faq</a>
+	·
+		<a href="contact.html">Contact</a>
+		</p>
+ 
+		<p class="footer-company-name">Plethora &copy; 2023</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span></span>UAE , AJMAN</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+971553314376</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="thepsychopanda7@gmail.com">plethoraenough@gmail.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>About the company</span>
+	Plethora is a lerning platform that offers a wide variety of educational resources, such as online courses, tutorials, and quizzes, to help users expand their knowledge and skills in different subject areas. The platform is designed to be accessible and user-friendly, with a simple navigation system and a variety of interactive tools and features. &copy; to know more
+		</p> 
+		</div>
+ 
+		</footer>
+		<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/600c3f2ea9a34e36b96f89fc/1esntdk2v';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+
+	<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

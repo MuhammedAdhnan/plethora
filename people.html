@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>did you know ? </title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link href="index.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	}
+	header{
+	height:60px;
+	background:hwb(0 17% 83%);
+	padding:0 50px;
+	}
+	.logo{
+	width:30%;
+	float:left;
+	color:rgb(7, 0, 0);
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:60px;
+	font-size:35px;
+	font-family:sans-serif;
+	}
+	nav{
+	width:68%;
+	float:right;
+	}
+	nav ul{
+	list-style:none;
+	float:right;
+	}
+	nav ul li{
+	display: inline-block;
+	}
+	nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:bold;
+	margin:0 10px;
+	line-height:60px;
+	text-transform:uppercase;
+	}
+	.banner{
+	height:100%;
+	}
+	.banner img{
+	width:100%;
+	height:90vh;
+	}
+	.content{
+	padding:5%;
+	}
+	.content p{
+	font-size:18px;
+	line-height:1.7;
+	font-family:sans-serif;
+	margin-bottom:25px;
+	}
+	footer{
+	background:rgb(36, 34, 34);
+	color:#fff;
+	padding:15px 50px;
+	text-align:center;
+	}
+	   
+	   
+	   @media (max-width: 600px){        
+
+	header {
+	 width: 100%;
+	 height: 100%;
+	 padding: 0;
+	 text-align: center;
+	}
+	.logo {
+	 width: 100%;
+	 float: none;
+	}
+	nav {
+	 width: 100%;
+	 float: none;
+	}
+	nav ul li {
+	 display: block;
+	}
+	nav ul {
+	 float: none;
+	}
+	   }    
+	   ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+       } 
+	   ::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+	   }
+	   ::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+        }     
+	.image img:hover{
+		transform: rotate(12deg);
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			Plethora
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://www.youtube.com/channel/UCWWDImjDg-91KBoHO2ZkCUQ" target="_blank">youtube</a>
+				</li>
+				<li>
+					<a href="feedback.html"target="_blank">feedback</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/NottNero"target="_blank">twitter</a>
+				</li>
+				<li>
+					<a href="post.html"target="_blank">post</a>
+				</li>
+				<li>
+					<a href="contact.html"target="_blank">contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+    <div class="slider">
+
+		<div id="moreimg">
+		  <img src="img/e.jpg">
+		</div>
+	
+	  </div>
+	
+	  <script>
+	
+		var images = ['img/a.jpg', 'img/b.jpg', 'img/c.jpg', 'img/d.jpg', 'img/e.jpg'];
+	
+		var x = 0;
+	
+		var imgs = document.getElementById('moreimg');
+	
+		setInterval(slider, 2000);
+	
+	
+		function slider() {
+	
+		  if (x < images.length) {
+			x = x + 1;
+		  } else {
+			x = 1;
+		  }
+	
+	
+		  imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+	
+	
+		}
+	
+	
+	  </script>
+	
+	
+	  <style type="text/css">
+		.slider {
+		  width: 90%;
+		  height: 500px;
+		  margin: 20px auto;
+		  box-sizing: border-box;
+		  overflow: hidden;
+		  box-shadow: 5px 5px 10px grey;
+	
+		}
+	
+		 img {
+		  width: 100%;
+		  height: 100%;
+		  animation: ani 2s linear;
+	
+		}
+	
+		@keyframes ani {
+		  0% {
+			transform: scale(1.2);
+		  }
+		  10% {
+			transform: scale(1);
+		  }
+		  100% {
+			transform: scale(1);
+		  }
+		}
+	  </style>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	<div class="content">
+        <br>
+		<footer style="background:hwb(0 17% 83%); color:white; padding:10px 10px;"><p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif align-self"><b>PEOPLE</b></p></footer>
+		<br>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://fifpro.org/media/50ukxy3p/world-cup-trophy.jpg?center=0.18066237927585291,0.50542495479204341&mode=crop&heightratio=0.64&width=1600&rnd=133129144183130000" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Almost half the world's population watched both the 2010 and 2014 FIFA World Cup games</h3>
+							<p>In 2010, the <a href="https://www.fifa.com/worldcup/news/almost-half-the-world-tuned-home-watch-2010-fifa-world-cup-south-africat-1473143" rel="noopener">FIFA World Cup South Africa</a> was shown in every country and territory on Earth, including Antarctica and the Arctic Circle, which meant that a record-breaking 3.2 billion people around the world watched the game in their homes, or 46.4 percent of the global population. Four years later, <a href="https://www.fifa.com/worldcup/news/2014-fifa-world-cuptm-reached-3-2-billion-viewers-one-billion-watched--2745519" rel="noopener">FIFA World Cup Brazil</a> drew the same staggering number of viewers</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://operations.nfl.com/media/y3gfhgrh/ap22358755535364.jpg?rxy=0.46864853383844807,0.12140484992794034&width=1417&height=740&rnd=133317689280530000&quality=85" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Crowds at one Louisiana State University football game once cheered so loudly that it registered as an earthquake on a local seismograph</h3>
+							<p>The game, which took place between LSU and Auburn University, took place in front of a crowd of 79,431 fans at LSU's Tiger Stadium. The crowd's reaction to the game's final pass <a href="https://www.wbrz.com/news/it-s-been-30-years-since-lsu-s-famous-earthquake-game-/" target="_blank" rel="noopener noreferrer">registered as an earthquake</a> by a seismograph located around 1,000 feet from the stadium. A seismologist noticed the reading the next day and the game went down in LSU history as the "Earthquake Game.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://news.cornell.edu/sites/default/files/styles/story_thumbnail_lg/public/2019-09/072297_guitar_tnd.jpg?itok=6Nlvkxz3" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Scientists made a "nanoguitar" the size of a human blood cell</h3>
+							<p>Cornell University researchers <a href="http://news.cornell.edu/stories/1997/07/worlds-smallest-silicon-mechanical-devices-are-made-cornell" target="_blank" rel="noopener noreferrer">carved the tiny musical instrument</a> out of crystalline silicon and claim that it's the world's smallest "nanoguitar" at 10 micrometers long. The guitar's six strings are each about 50 nanometers (100 atoms) wide. And while it was "made for fun to illustrate the technology," it also demonstrates how this tech could be used in fiber optics, displays, sensors, and electronics</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://miro.medium.com/v2/resize:fit:1400/1*lZ4dOtUZ1lorYDhni06oDg.jpeg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Einstein's brain was stolen when he died</h3>
+							<p>When Nobel Prize-winning physicist <strong>Albert Einstein</strong> passed away on April 18, 1955, he left behind specific instructions when it came to the disposal of his body, according to one <em>National Geographic</em> investigation. Einstein didn't want his corpse to be worshiped or his brain to be studied, so he instructed those who were responsible for his remains to "cremate them, and scatter the ashes secretly in order to discourage idolaters</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://www.kiwifamilies.co.nz/wp-content/uploads/2007/12/Is-Santa-real.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Santa Claus was given an official pilot's license in 1927</h3>
+							<p>When <a href="https://bestlifeonline.com/christmas-tradition-history/" target="_blank" rel="noopener noreferrer">Santa Claus</a> makes his trip around the world on Christmas Eve, you can rest assured that he's legally allowed to drive his sleigh—at least in the United States. In 1927, the jolly man in the red suit was given a pilot's license from the Assistant Secretary of Commerce for Aeronautics <strong>William P. MacCracken</strong></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="https://www.thoughtco.com/thmb/pTpEDJZxgSg0-t4yk8UFkauifkU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/51246880-resize-56a85e953df78cf7729dcc17.jpg" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Shakespeare invented more than 1,700 words</h3>
+							<p>Shakespeare wrote some of the most beloved and revered pieces of literature the world has ever known, but in order to craft his plays and poems, he sometimes resorted to making up his own words. In fact, The Bard is said to have come up with more than 1,700 words including moonbeam, laughable, eyeball, bump, puking, champion, bedroom, excitement, and zany </p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+    <div class="tour-button">
+			<a href="food.html" class="btn btn-common">Next Page</a>
+	 </div>
+		 <style>
+.action .btn-common {
+    margin-top: 55px;
+    float:right;
+}
+.btn-common {
+    font-size: 14px;
+    color: #0099ae;
+    border: 1px solid #0099ae;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 10px 25px;
+	text-align:center;
+	justify-content: center;
+    align-items: center;
+}
+</style>
+<footer class="footer-distributed">
+     
+    <div class="footer-left">
+
+    <h3>Plethora<span>.com</span></h3>
+
+    <p class="footer-links">
+    <a href="">Home</a>
+·
+    <a href="post.html">Blog</a>
+·
+    <a href="contact.html">About</a>
+·
+    <a href="post.html">Faq</a>
+·
+    <a href="contact.html">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Plethora &copy; 2023</p>
+    </div>
+
+    <div class="footer-center">
+
+    <div>
+    <i class="fa fa-map-marker"></i>
+    <p><span></span>UAE , AJMAN</p>
+    </div>
+
+    <div>
+    <i class="fa fa-phone"></i>
+    <p>+971553314376</p>
+    </div>
+
+    <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="thepsychopanda7@gmail.com">plethoraenough@gmail.com</a></p>
+    </div>
+
+    </div>
+
+    <div class="footer-right">
+
+    <p class="footer-company-about">
+    <span>About the company</span>
+Plethora is a lerning platform that offers a wide variety of educational resources, such as online courses, tutorials, and quizzes, to help users expand their knowledge and skills in different subject areas. The platform is designed to be accessible and user-friendly, with a simple navigation system and a variety of interactive tools and features. &copy; to know more
+    </p> 
+    </div>
+
+    </footer>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/600c3f2ea9a34e36b96f89fc/1esntdk2v';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
